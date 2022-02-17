@@ -15,7 +15,7 @@ namespace Alterskontrolle
                 alter = Convert.ToInt32(Console.ReadLine());
             }
 
-            //if(alter>=18)
+            //test luca heiler
 
             if (alter < 18)
             {
