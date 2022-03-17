@@ -10,19 +10,19 @@ namespace Array
 
 
             //Aufgabe 1 
-           
 
 
 
-            
-           string[] namen = new string[3];
 
-            
+
+            string[] namen = new string[3];
+
+
             namen[0] = "luca";
             namen[1] = "daniel";
             namen[2] = "tobi";
 
-               
+
             int[] daten = new int[10];      //Platz im Speicher in Form von Array (int) reserviert
 
 
@@ -49,9 +49,44 @@ namespace Array
 
             }
 
+            // Aufgabe 2
+
+            int[] Daten = new int[10];      //Platz im Speicher in Form von Array (int) reserviert
+
+
+
+            daten[0] = 361;
+            daten[1] = 289;
+            daten[2] = 169;
+          
+
+            //Anzahl der Elmente in einem Array kann über deren Eigenschaft "Length" abgerufen werden
+
+            for (int index = 3; index < daten.Length; index++)
+            {
+                daten[index] = index * 900;
+            }
+
+            foreach (int zeug in daten)
+            {
+                Console.Write($"{zeug}\t");
+
+
+
+
+
+
+
+
+
+            }
+
+
+
         }
 
 
 
+
     }
-}
+}               
