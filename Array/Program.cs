@@ -6,27 +6,52 @@ namespace Array
     {
         static void Main()
         {
-            Console.WriteLine("Geben Sie ihr Alter ein");
-            int alter = Convert.ToInt32(Console.ReadLine());
 
-            while (alter <= 0 || alter > 120)
+
+
+            //Aufgabe 1 
+           
+
+
+
+            
+           string[] namen = new string[3];
+
+            
+            namen[0] = "luca";
+            namen[1] = "daniel";
+            namen[2] = "tobi";
+
+               
+            int[] daten = new int[10];      //Platz im Speicher in Form von Array (int) reserviert
+
+
+            daten[0] = 19;
+            daten[1] = 17;
+            daten[2] = 13;
+
+            //Anzahl der Elmente in einem Array kann über deren Eigenschaft "Length" abgerufen werden
+
+            for (int index = 3; index < daten.Length; index++)
             {
-                Console.WriteLine("Fehler... Geben Sie ihr Alter erneut ein!!");
-                alter = Convert.ToInt32(Console.ReadLine());
+                daten[index] = index * 10;
             }
 
-            //test luca heiler
+            foreach (int zeug in daten)
+            {
+                Console.Write($"{zeug}\t");
 
-            if (alter < 18)
-            {
-                Console.WriteLine("Download wird verweigert");
-                Console.WriteLine("...");
             }
-            else
+            foreach (string element in namen)
             {
-                Console.WriteLine("Spiel wird heruntergeladen...");
+
+                Console.Write($"{element}\t");
+
             }
-            Console.ReadLine();
+
         }
+
+
+
     }
 }
